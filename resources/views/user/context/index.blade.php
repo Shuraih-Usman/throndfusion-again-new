@@ -110,35 +110,63 @@
 
             </div>
 
-            <div class="col-12 mb-3" id="">
+            <div class="col-6 mb-3" id="">
               <label for="emailLarge" class="form-label nice-select-search">Image</label>
               <input type="file" name="image" id="" class="form-control">
-              </select>
+              
             </div>
+
+            <div class="col-6 mb-3" id="" style="">
+                <label for="emailLarge" class="form-label">Finishing Date</label>
+                <input type="date" name="finishing" id="" class="form-control" placeholder="0.0">
+              </div>
 
 
           </div>
 
           <div class="row g2">
             
-            <div class="col-sm-6 mb-3" id="stopDate" style="">
-                <label for="emailLarge" class="form-label">Price</label>
-                <input type="number" name="price" id="" class="form-control" placeholder="0.0">
+            <div class="col-sm-4 col-6 mb-3" id="" style="">
+                <label for="emailLarge" class="form-label">First Reward</label>
+                <input type="number" name="first_reward" id="" class="form-control" placeholder="0.0">
               </div>
-            <div class="col-sm-6 mb-3">
-              <label for="emailLarge" class="form-label nice-select-search">Delivery Day</label>
-              <input type="text" name="delivery" class="form-control" placeholder="0" />
-              <small>amount of days it would take you to accomplish the tasks </small>
-            </div>
+
+              <div class="col-sm-4 col-6 mb-3" id="" style="">
+                <label for="emailLarge" class="form-label">Second Reward</label>
+                <input type="number" name="second_reward" id="" class="form-control" placeholder="0.0">
+              </div>
+
+              <div class="col-sm-4 col-6 mb-3" id="" style="">
+                <label for="emailLarge" class="form-label">Third Reward</label>
+                <input type="number" name="third_reward" id="" class="form-control" placeholder="0.0">
+              </div>
+
+              <div class="col-sm-4 col-6 mb-3" id="" style="">
+                <label for="emailLarge" class="form-label">Fourth Reward</label>
+                <input type="number" name="fourth_reward" id="" class="form-control" placeholder="0.0">
+              </div>
+
+              <div class="col-sm-4 col-6 mb-3" id="" style="">
+                <label for="emailLarge" class="form-label">Fifth Reward</label>
+                <input type="number" name="fifth_reward" id="" class="form-control" placeholder="0.0">
+              </div>
+
+              <div class="col-sm-4 col-6 mb-3" id="" style="">
+                <label for="emailLarge" class="form-label">Total Reward</label>
+                <input type="number" name="total_reward" id="" class="form-control" placeholder="0.0">
+              </div>
+ 
         </div>
 
 
           <div class="row">
             <div class="col mb-0">
-              <label for="emailLarge" class="form-label">Description</label>
+              <label for="emailLarge" class="form-label">Description / Instruction</label>
               <textarea class="form-control mt-3 editor" id="" name="description"></textarea>
 
             </div>
+
+ 
           </div>
         </div>
         <div class="modal-footer">

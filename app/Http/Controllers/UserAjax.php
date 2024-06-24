@@ -120,18 +120,11 @@ class UserAjax extends Controller
             $List = new $class();
             $data = $List->edit($request);
             return response()->json($data);
-        } else if($action == 'services_cats') {
-            $data = DB::table('service_cats')
+        } else if($action == 'services_cats' || $action == 'wishlists_types' ||  $action == 'context_cats') {
+            $data = DB::table($action)
                         ->where('status', 1)
                         ->orderBy('id','desc')
-                        ->select('id', 'title')
-                        ->get();
-            return response()->json($data);            
-        } else if($action == 'wishlists_types') {
-            $data = DB::table('wishlists_types')
-                        ->where('status', 1)
-                        ->orderBy('id','desc')
-                        ->select('id', 'title')
+                        ->select('*')
                         ->get();
             return response()->json($data);            
         } else if($action == 'investment_list') {

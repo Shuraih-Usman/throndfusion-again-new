@@ -703,6 +703,7 @@
   
   ajaxSelect('select_project', 'get_campaign_types');
   ajaxSelect('cats_services', 'services_cats');
+  ajaxSelect('cats_contexts', 'context_cats');
   ajaxSelect('wish_cats', 'wishlists_types');
   
   
